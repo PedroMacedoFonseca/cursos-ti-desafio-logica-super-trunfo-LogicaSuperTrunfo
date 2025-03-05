@@ -44,55 +44,49 @@ int main()
     float resultadoSP = 0, resultadoRJ = 0;
 
     // Comparando o primeiro atributo (atributo1)
-    if (atributo1 == 1)
-    { // Se for "População"
+    switch (atributo1)
+    {
+    case 1: // População
         resultadoSP += populacaoSP;
         resultadoRJ += populacaoRJ;
-    }
-    else if (atributo1 == 2)
-    { // Se for "PIB"
+        break;
+    case 2: // PIB
         resultadoSP += pibSP;
         resultadoRJ += pibRJ;
-    }
-    else if (atributo1 == 3)
-    { // Se for "Área"
+        break;
+    case 3: // Área
         resultadoSP += areaSP;
         resultadoRJ += areaRJ;
-    }
-    else if (atributo1 == 4)
-    { // Se for "Densidade populacional"
+        break;
+    case 4: // Densidade populacional
         resultadoSP += densidadePopulacionalSP;
         resultadoRJ += densidadePopulacionalRJ;
-    }
-    else
-    {
+        break;
+    default:
         printf("Escolha inválida! O programa será encerrado.\n");
         return 0;
     }
 
     // Comparando o segundo atributo (atributo2)
-    if (atributo2 == 1)
-    { // Se for "População"
+    switch (atributo2)
+    {
+    case 1: // População
         resultadoSP += populacaoSP;
         resultadoRJ += populacaoRJ;
-    }
-    else if (atributo2 == 2)
-    { // Se for "PIB"
+        break;
+    case 2: // PIB
         resultadoSP += pibSP;
         resultadoRJ += pibRJ;
-    }
-    else if (atributo2 == 3)
-    { // Se for "Área"
+        break;
+    case 3: // Área
         resultadoSP += areaSP;
         resultadoRJ += areaRJ;
-    }
-    else if (atributo2 == 4)
-    { // Se for "Densidade populacional"
+        break;
+    case 4: // Densidade populacional
         resultadoSP += densidadePopulacionalSP;
         resultadoRJ += densidadePopulacionalRJ;
-    }
-    else
-    {
+        break;
+    default:
         printf("Escolha inválida! O programa será encerrado.\n");
         return 0;
     }
@@ -104,40 +98,64 @@ int main()
     // Atributos escolhidos e seus valores
     printf("Atributos escolhidos para a comparação:\n");
     printf("1. ");
-    if (atributo1 == 1) printf("População\n");
-    if (atributo1 == 2) printf("PIB\n");
-    if (atributo1 == 3) printf("Área\n");
-    if (atributo1 == 4) printf("Densidade populacional\n");
+    if (atributo1 == 1)
+        printf("População\n");
+    if (atributo1 == 2)
+        printf("PIB\n");
+    if (atributo1 == 3)
+        printf("Área\n");
+    if (atributo1 == 4)
+        printf("Densidade populacional\n");
 
     printf("2. ");
-    if (atributo2 == 1) printf("População\n");
-    if (atributo2 == 2) printf("PIB\n");
-    if (atributo2 == 3) printf("Área\n");
-    if (atributo2 == 4) printf("Densidade populacional\n");
+    if (atributo2 == 1)
+        printf("População\n");
+    if (atributo2 == 2)
+        printf("PIB\n");
+    if (atributo2 == 3)
+        printf("Área\n");
+    if (atributo2 == 4)
+        printf("Densidade populacional\n");
 
     // Exibindo os valores dos atributos de cada cidade
     printf("\nValores dos atributos:\n");
     printf("%s:\n", estadoSP);
-    if (atributo1 == 1) printf("População: %d\n", populacaoSP);
-    if (atributo1 == 2) printf("PIB: %.2f\n", pibSP);
-    if (atributo1 == 3) printf("Área: %.2f\n", areaSP);
-    if (atributo1 == 4) printf("Densidade populacional: %.2f\n", densidadePopulacionalSP);
+    if (atributo1 == 1)
+        printf("População: %d\n", populacaoSP);
+    if (atributo1 == 2)
+        printf("PIB: %.2f\n", pibSP);
+    if (atributo1 == 3)
+        printf("Área: %.2f\n", areaSP);
+    if (atributo1 == 4)
+        printf("Densidade populacional: %.2f\n", densidadePopulacionalSP);
 
-    if (atributo2 == 1) printf("População: %d\n", populacaoSP);
-    if (atributo2 == 2) printf("PIB: %.2f\n", pibSP);
-    if (atributo2 == 3) printf("Área: %.2f\n", areaSP);
-    if (atributo2 == 4) printf("Densidade populacional: %.2f\n", densidadePopulacionalSP);
+    if (atributo2 == 1)
+        printf("População: %d\n", populacaoSP);
+    if (atributo2 == 2)
+        printf("PIB: %.2f\n", pibSP);
+    if (atributo2 == 3)
+        printf("Área: %.2f\n", areaSP);
+    if (atributo2 == 4)
+        printf("Densidade populacional: %.2f\n", densidadePopulacionalSP);
 
     printf("\n%s:\n", estadoRJ);
-    if (atributo1 == 1) printf("População: %d\n", populacaoRJ);
-    if (atributo1 == 2) printf("PIB: %.2f\n", pibRJ);
-    if (atributo1 == 3) printf("Área: %.2f\n", areaRJ);
-    if (atributo1 == 4) printf("Densidade populacional: %.2f\n", densidadePopulacionalRJ);
+    if (atributo1 == 1)
+        printf("População: %d\n", populacaoRJ);
+    if (atributo1 == 2)
+        printf("PIB: %.2f\n", pibRJ);
+    if (atributo1 == 3)
+        printf("Área: %.2f\n", areaRJ);
+    if (atributo1 == 4)
+        printf("Densidade populacional: %.2f\n", densidadePopulacionalRJ);
 
-    if (atributo2 == 1) printf("População: %d\n", populacaoRJ);
-    if (atributo2 == 2) printf("PIB: %.2f\n", pibRJ);
-    if (atributo2 == 3) printf("Área: %.2f\n", areaRJ);
-    if (atributo2 == 4) printf("Densidade populacional: %.2f\n", densidadePopulacionalRJ);
+    if (atributo2 == 1)
+        printf("População: %d\n", populacaoRJ);
+    if (atributo2 == 2)
+        printf("PIB: %.2f\n", pibRJ);
+    if (atributo2 == 3)
+        printf("Área: %.2f\n", areaRJ);
+    if (atributo2 == 4)
+        printf("Densidade populacional: %.2f\n", densidadePopulacionalRJ);
 
     // Exibindo a soma dos atributos de cada cidade
     printf("\nSoma dos atributos para cada cidade:\n");
@@ -146,11 +164,16 @@ int main()
 
     // Exibindo quem venceu ou se houve empate
     printf("\nResultado da comparação: \n");
-    if (resultadoSP > resultadoRJ) {
+    if (resultadoSP > resultadoRJ)
+    {
         printf("%s venceu!\n", estadoSP);
-    } else if (resultadoSP < resultadoRJ) {
+    }
+    else if (resultadoSP < resultadoRJ)
+    {
         printf("%s venceu!\n", estadoRJ);
-    } else {
+    }
+    else
+    {
         printf("Empate!\n");
     }
 
